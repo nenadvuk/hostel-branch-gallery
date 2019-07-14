@@ -25,7 +25,7 @@
         </v-toolbar>
         
         <section class="img-box">
-          <h2>Galerija</h2>
+          <h2>MeetUp3G</h2> <v-btn round><router-link to="/Gallery">Gallery</router-link></v-btn>
           <Lightbox
             :thumbnails="lightbox.images.thumbnails"
             :largeImages="lightbox.images.large"

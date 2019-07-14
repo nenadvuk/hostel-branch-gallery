@@ -4,6 +4,7 @@ import Home from './views/Home.vue'
 import Accommodation from './components/Accommodation.vue'
 import Yard from './components/Yard.vue'
 import MeetUp3G from './components/MeetUp3G.vue'
+import Gallery from "./components/Gallery"
 
 Vue.use(Router)
 
@@ -39,6 +40,11 @@ export default new Router({
       path: '/MeetUp3G',
       name: 'meetUp3G',
       component: MeetUp3G
+    },
+    {
+      path: '/Gallery',
+      name: 'gallery',
+      component: Gallery
     }
 
   ]

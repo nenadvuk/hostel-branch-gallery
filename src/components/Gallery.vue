@@ -181,4 +181,9 @@ html {
 .btn{
   text-decoration: none;
 }
+
+a {  
+  text-decoration: none;
+}
+
 </style>

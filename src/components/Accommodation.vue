@@ -26,7 +26,7 @@
         </v-toolbar>
 
         <section class="img-box">
-          <h2>Accommodation</h2>
+          <h2>Accommodation</h2> <v-btn round><router-link to="/Gallery">Gallery</router-link></v-btn>
 
           <Lightbox
             :thumbnails="lightbox.images.thumbnails"
@@ -169,6 +169,9 @@ img {
 .img-box {
   padding: 40px;
  
+}
+a {  
+  text-decoration: none;
 }
 
 </style>
