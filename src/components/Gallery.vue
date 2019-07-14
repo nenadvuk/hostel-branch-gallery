@@ -34,8 +34,8 @@
             <v-layout align-space-between justify-space-around fill-height fill-width>
               <v-hover>
                 <v-card
-                  dark
-                  color="primary"
+                  dark 
+                  color="deep-purple lighten-2"
                   slot-scope="{ hover }"
                   :class="`elevation-${hover ? 24 : 4}`"
                   class="mx-2"
@@ -61,6 +61,7 @@
               <v-hover>
                 <v-card
                   dark
+                  color="teal lighten-1"
                   slot-scope="{ hover }"
                   :class="`elevation-${hover ? 24 : 4}`"
                   class="mx-2"
@@ -87,6 +88,7 @@
               <v-hover>
                 <v-card
                   dark
+                  color="orange accent-1"
                   slot-scope="{ hover }"
                   :class="`elevation-${hover ? 24 : 4}`"
                   class="mx-2"
@@ -174,5 +176,9 @@ html {
 .layout {
   background-color: rgba(199, 253, 253, 0.788);
 
+}
+
+.btn{
+  text-decoration: none;
 }
 </style>

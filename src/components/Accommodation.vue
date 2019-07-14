@@ -168,5 +168,7 @@ img {
 
 .img-box {
   padding: 40px;
+ 
 }
+
 </style>

@@ -146,7 +146,7 @@ export default {
     background-position: center;
     align-self: center;
     padding: 15px;
-     border: 300px solid transparent;
+     border: 200px solid transparent;
   }
 
   &__close,
