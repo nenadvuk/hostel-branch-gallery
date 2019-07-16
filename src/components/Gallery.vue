@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="gallery-box">
-    <v-app id="inspire">
+      <v-app id="inspire">
         <v-layout justify-center>
           <v-flex xs12 sm6>
             <v-navigation-drawer temporary v-model="sideNav" absolute dark class="providna">
@@ -34,7 +34,7 @@
             <v-layout align-space-between justify-space-around fill-height fill-width>
               <v-hover>
                 <v-card
-                  dark 
+                  dark
                   color="deep-purple lighten-2"
                   slot-scope="{ hover }"
                   :class="`elevation-${hover ? 24 : 4}`"
@@ -113,7 +113,7 @@
             </v-layout>
           </v-flex>
         </v-layout>
-    </v-app>
+      </v-app>
     </div>
   </div>
 </template>
@@ -121,46 +121,26 @@
 <script>
 export default {
   name: "app",
-  data: () => ({
-    sideNav: false,
-    menuItems: [
-      { icon: "home", title: "Home", link: "" },
-      { icon: "room", title: "Rooms", link: "" },
-      { icon: "visibility", title: "What to see?", link: "" },
-      { icon: "grade", title: "Events", link: "" },
-      { icon: "photo_camera", title: "Gallery", link: "" },
-      { icon: "contacts", title: "Contact", link: "" }
-    ],
-    /* cards: [
-      { title: "Smeštaj/Accommodation", src: "/img/branch/smestaj/smestaj19.jpg", flex: 12 },
-      {
-        title: "Dvorište",
-        src: "https://cdn.vuetifyjs.com/images/cards/road.jpg",
-        flex: 6
-      },
-      {
-        title: "3G Meet-up",
-        src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-        flex: 6
-      }
-    ], */
+  data() {
+    return {
+      sideNav: false,
+      menuItems: [
+        { icon: "home", title: "Home", link: "" },
+        { icon: "room", title: "Rooms", link: "" },
+        { icon: "visibility", title: "What to see?", link: "" },
+        { icon: "grade", title: "Events", link: "" },
+        { icon: "photo_camera", title: "Gallery", link: "" },
+        { icon: "contacts", title: "Contact", link: "" }
+      ],
 
-    reverse: false,
-    flexDirection: "row",
-    fillHeight: true
-  }),
-
-  methods: {},
-
-  mounted() {}
+    };
+  }
 };
 </script>
 
 <style>
-
 html {
   scroll-behavior: smooth;
-
 }
 
 .resultContainer {
@@ -175,15 +155,13 @@ html {
 
 .layout {
   background-color: rgba(199, 253, 253, 0.788);
-
 }
 
-.btn{
+.btn {
   text-decoration: none;
 }
 
-a {  
+a {
   text-decoration: none;
 }
-
 </style>
