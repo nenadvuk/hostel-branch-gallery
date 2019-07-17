@@ -131,7 +131,7 @@ export default {
         { icon: "grade", title: "Events", link: "" },
         { icon: "photo_camera", title: "Gallery", link: "" },
         { icon: "contacts", title: "Contact", link: "" }
-      ],
+      ]
 
     };
   }
@@ -145,12 +145,6 @@ html {
 
 .resultContainer {
   height: 350px;
-}
-
-.item {
-  min-height: 50px;
-  min-width: 80px;
-  margin: 10px;
 }
 
 .layout {
